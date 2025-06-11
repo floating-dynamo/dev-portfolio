@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Menu, X, Code, Home, User, FolderOpen, Wrench, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
