@@ -116,7 +116,7 @@ const Projects = () => {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="bg-slate-900/50 border-slate-800 hover:border-green-500/50 transition-all duration-300 group overflow-hidden"
+              className="bg-slate-900/50 border-slate-800 hover:border-green-500/50 transition-all duration-300 group overflow-hidden flex flex-col"
             >
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden">
@@ -135,13 +135,15 @@ const Projects = () => {
                       <Button
                         size="sm"
                         className="bg-green-500 hover:bg-green-600 text-slate-950"
+                        onClick={() => window.open(project.liveUrl, '_blank')}
                       >
                         <ExternalLink className="w-4 h-4" />
                       </Button>
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-slate-600"
+                        className="border-slate-600 hover:bg-slate-800"
+                        onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github className="w-4 h-4" />
                       </Button>
@@ -150,7 +152,7 @@ const Projects = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex-grow">
                 <h3
                   className="text-xl font-semibold text-slate-100 mb-3 group-hover:text-green-400 transition-colors duration-200"
                   style={{ fontFamily: 'Bricolage Grotesque, sans-serif' }}
@@ -173,7 +175,7 @@ const Projects = () => {
                 </div>
               </CardContent>
 
-              <CardFooter className="p-6 pt-0">
+              <CardFooter className="p-6 pt-0 mt-auto">
                 <div className="flex space-x-2 w-full">
                   <Button
                     size="sm"
