@@ -92,6 +92,10 @@ const Projects = () => {
     },
   ];
 
+  const handleViewAllProjects = () => {
+    window.open('https://github.com/floating-dynamo', '_blank');
+  };
+
   return (
     <section
       id="projects"
@@ -204,7 +208,9 @@ const Projects = () => {
             variant="outline"
             size="lg"
             className="border-slate-600 hover:bg-slate-800"
+            onClick={handleViewAllProjects}
           >
+            <Github className="mr-2 w-5 h-5" />
             View All Projects
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
