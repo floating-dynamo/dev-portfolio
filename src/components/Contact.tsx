@@ -29,15 +29,56 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Validate required fields
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "Missing Information",
+        description: "Please fill in all required fields.",
+        variant: "destructive"
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+      return;
+    }
+
+    // Create email content
+    const emailSubject = encodeURIComponent(`Portfolio Contact: ${formData.subject}`);
+    const emailBody = encodeURIComponent(
+      `Hi Sridhar,\n\n` +
+      `You have received a new message from your portfolio website:\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Subject: ${formData.subject}\n\n` +
+      `Message:\n${formData.message}\n\n` +
+      `Best regards,\n${formData.name}`
+    );
+
+    // Create mailto link
+    const mailtoLink = `mailto:shridharmaskeri@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+
+    try {
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      toast({
+        title: "Email Client Opened!",
+        description: "Your email client should now be open with the message pre-filled. Please send the email to complete your message.",
+      });
+
+      // Reset form after a short delay
+      setTimeout(() => {
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      }, 1000);
+
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an issue opening your email client. Please try again or contact me directly.",
+        variant: "destructive"
+      });
+    }
+
+    setIsSubmitting(false);
   };
 
   const contactInfo = [
@@ -182,6 +223,10 @@ const Contact = () => {
             <Card className="bg-slate-900/50 border-slate-800">
               <CardHeader>
                 <CardTitle className="text-2xl text-slate-100" style={{ fontFamily: 'Bricolage Grotesque, sans-serif' }}>Send Message</CardTitle>
+                <p className="text-slate-400 text-sm">
+                  Fill out the form below and I'll get back to you as soon as possible. 
+                  Clicking "Send Message" will open your email client with the message pre-filled.
+                </p>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -258,7 +303,7 @@ const Contact = () => {
                     {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-slate-950 mr-2"></div>
-                        Sending...
+                        Opening Email Client...
                       </>
                     ) : (
                       <>

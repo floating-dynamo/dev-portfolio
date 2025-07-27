@@ -25,12 +25,18 @@ const About = () => {
   ];
 
   const downloadResume = () => {
-    // In a real application, this would download an actual resume file
-    const link = document.createElement('a');
-    link.href =
-      'https://drive.google.com/file/d/1e_PG6BGucXfBOkR1t8FosU4AqgD1Sur2/view?usp=drive_link';
-    link.download = 'Sridhar_Maskeri_Resume.pdf';
-    link.click();
+    // Open the Google Drive link in a new tab
+    window.open(
+      'https://drive.google.com/file/d/1e_PG6BGucXfBOkR1t8FosU4AqgD1Sur2/view?usp=drive_link',
+      '_blank'
+    );
+  };
+
+  const scrollToProjects = () => {
+    const element = document.querySelector('#projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -84,6 +90,7 @@ const About = () => {
               <Button
                 variant="outline"
                 className="border-slate-600 hover:bg-slate-800"
+                onClick={scrollToProjects}
               >
                 View My Projects
               </Button>
