@@ -1,7 +1,7 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import ProfileImage from '/public/sridhar-maskeri.png';
+import ProfileImage from '/src/images/sridhar-maskeri.png';
 
 // const GITHUB_USER_IMAGE_URL =
 //   'https://avatars.githubusercontent.com/u/65811224?s=400&u=e4241a927da1574d05573a55ceb18a4909b30188&v=4';

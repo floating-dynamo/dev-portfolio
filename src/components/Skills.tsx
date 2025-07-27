@@ -1,21 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import ReactIcon from '/public/skill-icons/react.svg';
-import TypeScriptIcon from '/public/skill-icons/typescript.svg';
-import NextjsIcon from '/public/skill-icons/nextjs.svg';
-import TailwindIcon from '/public/skill-icons/tailwindcss.svg';
-import Html5Icon from '/public/skill-icons/html5.svg';
-import Css3Icon from '/public/skill-icons/css3.svg';
-import NodejsIcon from '/public/skill-icons/nodejs.svg';
-import ExpressjsIcon from '/public/skill-icons/expressjs.svg';
-import PostgresqlIcon from '/public/skill-icons/postgresql.svg';
-import MongodbIcon from '/public/skill-icons/mongodb.svg';
-import GitIcon from '/public/skill-icons/git.svg';
-import GithubIcon from '/public/skill-icons/github.svg';
-import AwsIcon from '/public/skill-icons/aws.svg';
-import FirebaseIcon from '/public/skill-icons/firebase.svg';
-import JestIcon from '/public/skill-icons/jest.svg';
+import ReactIcon from '/src/images/skill-icons/react.svg';
+import TypeScriptIcon from '/src/images/skill-icons/typescript.svg';
+import NextjsIcon from '/src/images/skill-icons/nextjs.svg';
+import TailwindIcon from '/src/images/skill-icons/tailwindcss.svg';
+import Html5Icon from '/src/images/skill-icons/html5.svg';
+import Css3Icon from '/src/images/skill-icons/css3.svg';
+import NodejsIcon from '/src/images/skill-icons/nodejs.svg';
+import ExpressjsIcon from '/src/images/skill-icons/expressjs.svg';
+import PostgresqlIcon from '/src/images/skill-icons/postgresql.svg';
+import MongodbIcon from '/src/images/skill-icons/mongodb.svg';
+import GitIcon from '/src/images/skill-icons/git.svg';
+import GithubIcon from '/src/images/skill-icons/github.svg';
+import AwsIcon from '/src/images/skill-icons/aws.svg';
+import FirebaseIcon from '/src/images/skill-icons/firebase.svg';
+import JestIcon from '/src/images/skill-icons/jest.svg';
 
 const Skills = () => {
   const skillCategories = [
