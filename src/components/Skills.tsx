@@ -244,7 +244,7 @@ const Skills = () => {
                         <ExternalLink size={16} />
                       </a>
                     </div>
-                    <div className="text-xs text-slate-500 font-mono">
+                    <div className="text-xs text-slate-500">
                       ID: {cert.credentialId}
                     </div>
                   </div>
