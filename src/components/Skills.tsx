@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
+import { ExternalLink } from 'lucide-react';
 import ReactIcon from '/src/images/skill-icons/react.svg';
 import TypeScriptIcon from '/src/images/skill-icons/typescript.svg';
 import NextjsIcon from '/src/images/skill-icons/nextjs.svg';
@@ -54,10 +55,30 @@ const Skills = () => {
   ];
 
   const certifications = [
-    'AWS Certified Cloud Practitioner',
-    'React Developer Certification',
-    'Node.js Application Developer',
-    'Google Analytics Certified',
+    {
+      title: 'AWS & Typescript Masterclass - CDK V2, Serverless, React',
+      provider: 'Udemy',
+      issued: 'Sep 2023',
+      credentialId: 'UC-6415a379-cba4-4913-8e10-6c382687027a',
+      skills: ['Amazon Web Services (AWS)', 'AWS CDK'],
+      link: 'https://www.udemy.com/certificate/UC-6415a379-cba4-4913-8e10-6c382687027a/'
+    },
+    {
+      title: 'The Complete Node.js Developer Course',
+      provider: 'Udemy',
+      issued: 'Jan 2023',
+      credentialId: 'UC-30508a17-5a1b-4769-8038-a74a0d68cca4',
+      skills: ['Node.Js', 'Express.js','RESTful APIs', 'MongoDB', 'Mongoose'],
+      link: 'https://www.udemy.com/certificate/UC-30508a17-5a1b-4769-8038-a74a0d68cca4/'
+    },
+    {
+      title: 'The Complete Web development Bootcamp',
+      provider: 'Udemy',
+      issued: 'Jul 2021',
+      credentialId: 'UC-49923dd1-808a-4173-9ef6-42efe79e37d4',
+      skills: ['Node.js', 'React.js', 'HTML5', 'JavaScript'],
+      link: 'https://www.udemy.com/certificate/UC-49923dd1-808a-4173-9ef6-42efe79e37d4/'
+    },
   ];
 
   // const getSkillColor = (level: number) => {
@@ -186,11 +207,46 @@ const Skills = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
-                    <span className="text-slate-300 text-sm">{cert}</span>
+                  <div key={index} className="border border-slate-700 rounded-lg p-4 hover:border-green-500/50 transition-colors duration-300">
+                    <div className="flex items-start justify-between mb-2">
+                      <div className="flex-1">
+                        <h4 className="text-slate-200 font-medium text-sm leading-tight mb-1">
+                          {cert.title}
+                        </h4>
+                        <div className="flex items-center gap-2 text-xs text-slate-400 mb-2">
+                          <span className="font-medium">{cert.provider}</span>
+                          <span>•</span>
+                          <span>Issued {cert.issued}</span>
+                        </div>
+                        {cert.skills.length > 0 && (
+                          <div className="flex flex-wrap gap-1">
+                            {cert.skills.map((skill, skillIndex) => (
+                              <Badge
+                                key={skillIndex}
+                                variant="outline"
+                                className="text-xs px-2 py-0 bg-slate-800/50 text-slate-300 border-slate-600"
+                              >
+                                {skill}
+                              </Badge>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-400 hover:text-green-400 transition-colors duration-200 flex-shrink-0 ml-2"
+                        aria-label={`View ${cert.title} certificate`}
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    </div>
+                    <div className="text-xs text-slate-500">
+                      ID: {cert.credentialId}
+                    </div>
                   </div>
                 ))}
               </div>
