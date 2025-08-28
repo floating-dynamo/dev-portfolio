@@ -25,9 +25,8 @@ const About = () => {
   ];
 
   const downloadResume = () => {
-    // Open the Google Drive link in a new tab
     window.open(
-      'https://drive.google.com/file/d/1e_PG6BGucXfBOkR1t8FosU4AqgD1Sur2/view?usp=drive_link',
+      'https://drive.google.com/uc?export=download&id=14Fr96KgKORUVdVMSnGTsB3VfJR_dN2GE',
       '_blank'
     );
   };

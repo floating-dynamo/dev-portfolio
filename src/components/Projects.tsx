@@ -16,7 +16,7 @@ const Projects = () => {
       description:
         'A modern ERP (Enterprise Resource Planning) web application built with Next.js, React, Hono, and MongoDB. It provides modules for managing customers, enquiries, quotations, purchase orders, supplier delivery challans, companies, and user authentication/authorization.',
       image:
-        'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
+        'https://images.pexels.com/photos/4622224/pexels-photo-4622224.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: [
         'React',
         'Next.js',
@@ -35,7 +35,7 @@ const Projects = () => {
       description:
         'Built a daily drawing app where users select categories for drawing prompts and build a consistent creative habit.',
       image:
-        'https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=600',
+        'https://images.pexels.com/photos/1478477/pexels-photo-1478477.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React', 'Next.js', 'Tailwind CSS', 'Shadcn UI'],
       liveUrl: 'https://drawed.vercel.app',
       githubUrl: 'https://github.com/floating-dynamo/drawed',
@@ -47,7 +47,7 @@ const Projects = () => {
       description:
         'A React Native mobile app for the North Goa Government to support state elections.',
       image:
-        'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+        'https://images.pexels.com/photos/8849332/pexels-photo-8849332.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['React Native', 'Django', 'AWS', 'Mobile App'],
       liveUrl:
         'https://drive.google.com/drive/folders/1DYuRL5xdSfy4LJakoeD7iO9y98DVmETO',
@@ -60,7 +60,7 @@ const Projects = () => {
       description:
         'A modern music player web application built with HTML, CSS and JavaScript. It features a sleek design, responsive layout.',
       image:
-        'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
+        'https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&w=600',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       liveUrl: 'https://floating-dynamo.github.io/Music-Player/',
       githubUrl: 'https://github.com/floating-dynamo/Music-Player',
