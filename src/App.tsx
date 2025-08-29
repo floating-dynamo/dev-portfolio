@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { Toaster } from '@/components/ui/toaster';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Blog />
         <Contact />
       </main>
       <Toaster />
