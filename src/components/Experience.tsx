@@ -57,7 +57,7 @@ const Experience = () => {
       isActive: false
     },
     {
-      id: 2,
+      id: 3,
       title: 'Senior Software Engineer',
       company: 'Persistent Systems',
       location: 'Goa, India',
@@ -75,7 +75,7 @@ const Experience = () => {
       ]
     },
     {
-      id: 2,
+      id: 4,
       title: 'Software Engineer',
       company: 'Persistent Systems',
       location: 'Goa, India',
@@ -272,7 +272,7 @@ const Experience = () => {
           </Card>
           <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/10 border-blue-500/20">
             <CardContent className="p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">2</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">3</div>
               <div className="text-slate-300">Companies</div>
             </CardContent>
           </Card>
