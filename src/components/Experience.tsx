@@ -23,7 +23,7 @@ const Experience = () => {
       title: 'Software Engineer',
       company: 'Builder.io',
       location: 'Remote',
-      period: 'Oct 2024 - Present',
+      period: 'Oct 2025 - Present',
       startDate: '2024-10',
       type: 'Full-time',
       description: [
@@ -37,8 +37,9 @@ const Experience = () => {
       title: 'Software Engineer',
       company: 'Mphasis',
       location: 'Bengaluru, Karnataka, India',
-      period: 'Jul 2024 - Present',
+      period: 'Jul 2024 - Oct 2025',
       startDate: '2024-07',
+      endDate: '2025-10',
       type: 'Full-time',
       description: [
         'Working for HP @Bangalore Research Center.',
