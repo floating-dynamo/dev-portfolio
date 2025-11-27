@@ -1,4 +1,4 @@
-import { Menu, X, Code, Home, User, FolderOpen, Wrench, Mail, Briefcase } from 'lucide-react';
+import { Menu, X, Code, Home, User, FolderOpen, Wrench, Mail, Briefcase, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 
@@ -20,6 +20,7 @@ const Header = () => {
     { href: '#experience', label: 'Experience', icon: Briefcase },
     { href: '#projects', label: 'Projects', icon: FolderOpen },
     { href: '#skills', label: 'Skills', icon: Wrench },
+    { href: '#resources', label: 'Resources', icon: BookOpen },
     { href: '#contact', label: 'Contact', icon: Mail },
   ];
 
