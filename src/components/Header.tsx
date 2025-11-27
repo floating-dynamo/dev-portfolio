@@ -1,6 +1,7 @@
 import { Menu, X, Code, Home, User, FolderOpen, Wrench, Mail, Briefcase, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
