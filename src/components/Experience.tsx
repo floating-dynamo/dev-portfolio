@@ -28,7 +28,6 @@ const Experience = () => {
       type: 'Full-time',
       description: [
         'Building innovative AI-powered development tools and visual development platform.',
-        'Contributing to scalable cloud infrastructure and real-time collaborative features.',
       ],
       technologies: ['React.js', 'TypeScript', 'Node.js', 'Redis', 'GCP'],
       isActive: true
