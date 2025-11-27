@@ -21,6 +21,20 @@ const Experience = () => {
     {
       id: 0,
       title: 'Software Engineer',
+      company: 'Builder.io',
+      location: 'Remote',
+      period: 'Oct 2024 - Present',
+      startDate: '2024-10',
+      type: 'Full-time',
+      description: [
+        'Building innovative AI-powered development tools and visual development platform.',
+      ],
+      technologies: ['React.js', 'TypeScript', 'Node.js', 'Redis', 'GCP'],
+      isActive: true
+    },
+    {
+      id: 1,
+      title: 'Software Engineer',
       company: 'Mphasis',
       location: 'Bengaluru, Karnataka, India',
       period: 'Jul 2024 - Present',
@@ -39,10 +53,10 @@ const Experience = () => {
         'Built custom AI-powered VS Code extension',
         'Enhanced global user experience with multilingual support'
       ],
-      isActive: true
+      isActive: false
     },
     {
-      id: 1,
+      id: 3,
       title: 'Senior Software Engineer',
       company: 'Persistent Systems',
       location: 'Goa, India',
@@ -60,7 +74,7 @@ const Experience = () => {
       ]
     },
     {
-      id: 2,
+      id: 4,
       title: 'Software Engineer',
       company: 'Persistent Systems',
       location: 'Goa, India',
@@ -257,7 +271,7 @@ const Experience = () => {
           </Card>
           <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/10 border-blue-500/20">
             <CardContent className="p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">2</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">3</div>
               <div className="text-slate-300">Companies</div>
             </CardContent>
           </Card>
