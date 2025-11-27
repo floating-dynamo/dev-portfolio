@@ -24,7 +24,7 @@ const Experience = () => {
       company: 'Builder.io',
       location: 'Remote',
       period: 'Oct 2025 - Present',
-      startDate: '2024-10',
+      startDate: '2025-10',
       type: 'Full-time',
       description: [
         'Building innovative AI-powered development tools and visual development platform.',
