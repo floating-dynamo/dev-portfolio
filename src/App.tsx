@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { Toaster } from '@/components/ui/toaster';
 import Blog from './components/Blog';
+import Resources from './components/Resources';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Resources />
         <Blog />
         <Contact />
       </main>
