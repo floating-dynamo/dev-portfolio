@@ -21,6 +21,21 @@ const Experience = () => {
     {
       id: 0,
       title: 'Software Engineer',
+      company: 'Builder.io',
+      location: 'Remote',
+      period: 'Oct 2024 - Present',
+      startDate: '2024-10',
+      type: 'Full-time',
+      description: [
+        'Building innovative AI-powered development tools and visual development platform.',
+        'Contributing to scalable cloud infrastructure and real-time collaborative features.',
+      ],
+      technologies: ['React.js', 'TypeScript', 'Node.js', 'Redis', 'GCP'],
+      isActive: true
+    },
+    {
+      id: 1,
+      title: 'Software Engineer',
       company: 'Mphasis',
       location: 'Bengaluru, Karnataka, India',
       period: 'Jul 2024 - Present',
@@ -39,10 +54,10 @@ const Experience = () => {
         'Built custom AI-powered VS Code extension',
         'Enhanced global user experience with multilingual support'
       ],
-      isActive: true
+      isActive: false
     },
     {
-      id: 1,
+      id: 2,
       title: 'Senior Software Engineer',
       company: 'Persistent Systems',
       location: 'Goa, India',
